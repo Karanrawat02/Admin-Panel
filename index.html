@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="logo">
+        <i class="ri-menu-line icon icon-0 menu"></i>
+        <h2>InnovativeHub</h2>
+      </div>
+      <div class="search--notification--profile">
+        <div class="search">
+          <input type="text" placeholder="Search Schedule..." />
+          <button><i class="ri-search-2-line"></i></button>
+        </div>
+        <div class="notification--profile">
+          <div class="picon lock">
+            <i class="ri-chat-1-line"></i>
+          </div>
+          <div class="picon chat">
+            <i class="ri-settings-3-line"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <div class="sidebar">
+        <ul class="sidebar--items">
+          <li>
+            <a href="#" id="active--link">
+              <span class="icon icon-1"><i class="ri-team-fill"></i></span>
+              <span class="sidebar--item">Design Team</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon icon-2"
+                ><i class="ri-bar-chart-grouped-fill"></i
+              ></span>
+              <span class="sidebar--item">Marketing Team</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon icon-3"
+                ><i class="ri-code-s-slash-fill"></i
+              ></span>
+              <span class="sidebar--item" style="white-space: nowrap"
+                >Development Team</span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sidebar--item-create">
+              <span class="icon icon-9"><i class="ri-add-line"></i></span>
+              <span class="sidebar--item" style="white-space: nowrap">
+                Create a Team</span
+              >
+            </a>
+          </li>
+          <hr />
+          <br />
+          <div class="section-folder">
+            <h4 class="section-folder">Folders</h4>
+            <li>
+              <a href="#">
+                <span class="icon icon-4"><i class="ri-folder-line"></i></span>
+                <span class="sidebar--item">Products</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon icon-4"><i class="ri-folder-line"></i></span>
+                <span class="sidebar--item">Sales</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon icon-4"><i class="ri-folder-line"></i></span>
+                <span class="sidebar--item">Design</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon icon-4"><i class="ri-folder-line"></i></span>
+                <span class="sidebar--item">Office</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon icon-4"><i class="ri-folder-line"></i></span>
+                <span class="sidebar--item">Legal</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="sidebar--item-create">
+                <span class="icon icon-9"><i class="ri-add-line"></i></span>
+                <span class="sidebar--item">Create a Folder</span>
+              </a>
+            </li>
+          </div>
+        </ul>
+        <ul class="sidebar--bottom-items">
+          <li>
+            <a href="#">
+              <span class="icon icon-7"
+                ><i class="ri-settings-3-line"></i
+              ></span>
+              <span class="sidebar--item">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon icon-8"
+                ><i class="ri-logout-box-r-line"></i
+              ></span>
+              <span class="sidebar--item">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main--content">
+        <div class="overview">
+          <div class="title">
+            <!-- <h2 class="section--title">Overview</h2> -->
+            <select name="date" id="date" class="dropdown">
+              <option value="all-brands">All Brands</option>
+              <option value="Brand1">Brand 1</option>
+              <option value="Brand2">Brand 2</option>
+              <option value="Brand3">Brand 3</option>
+              <option value="Brand4">Brand 4</option>
+            </select>
+            <select name="date" id="date" class="dropdown">
+              <option value="Desk">Desk</option>
+              <option value="Desk1">Desk 1</option>
+              <option value="Desk2">Desk 2</option>
+              <option value="Desk3">Desk 3</option>
+              <option value="Desk4">Desk 4</option>
+            </select>
+            <select name="date" id="date" class="dropdown">
+              <option value="Tags">Tags</option>
+              <option value="Tags1">Tags 1</option>
+              <option value="Tags2">Tags 2</option>
+              <option value="Tags3">Tags 3</option>
+              <option value="Tags4">Tags 4</option>
+            </select>
+            <!-- Sort Button -->
+            <button class="dropdown"><i class="ri-arrow-up-down-line"></i> Sort</button>
+            <!-- Filter Button -->
+            <button class="dropdown">
+              <i class="ri-filter-3-line"></i> Filter
+            </button>
+          </div>
+        </div>
+        <div class="recent--person">
+          <div class="title1">
+            <h1 class="section--title">Our Members</h1>
+            <button class="add"><i class="ri-add-line"></i>Add</button>
+          </div>
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Brand</th>
+                  <th>Description</th>
+                  <th>Members</th>
+                  <th>Categories</th>
+                  <th>Tags</th>
+                  <th>Next Meeting</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cameron Williamson</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Karan,Arjun</td>
+                  <td>Automation</td>
+                  <td>pending</td>
+                  <td class="pending"> in 30 minutes</td>
+                </tr>
+                <tr>
+                  <td>George Washington</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Karan,Arjun</td>
+                  <td>B2B</td>
+                  <td>Confirmed</td>
+                  <td class="confirmed"> Tommorow </td>
+                </tr>
+                <tr>
+                  <td>John Adams</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Karan,Arjun</td>
+                  <td>Automation</td>
+                  <td>Confirmed</td>
+                  <td class="confirmed"> Tommorow </td>
+                </tr>
+                <tr>
+                  <td>Thomas Jefferson</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Karan,Arjun</td>
+                  <td>SAAS</td>
+                  <td>Rejected</td>
+                  <td class="rejected"> No-Contact</td>
+                </tr>
+                <tr>
+                  <td>James Madison</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Karan,Arjun</td>
+                  <td>B2B</td>
+                  <td >Confirmed</td>
+                  <td class="confirmed"> in 6 hours</td>
+                </tr>
+                <tr>
+                  <td>Andrew Jackson</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Karan,Arjun</td>
+                  <td>SAAS</td>
+                  <td >Confirmed</td>
+                  <td class="confirmed"> in 3 hours</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
